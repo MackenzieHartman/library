@@ -1,0 +1,85 @@
+Git is a common and widely used version control system.  Version control is how modern software is developed so a useable (client using or facing) version of an application is always available.  It also allows software engineers to build new features, update old features and fix broken features simultaneously.  An online service called github is then implemented to build remote repositories where code can be saved, shared and updated.
+
+To use git and github, follow these steps:
+
+		1.	Install git - https://git-scm.com/
+		2.	Create a github account - https://www.github.com
+
+The commands below are referenced from this github’s cheat sheet.
+Reference:  https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
+=================================================================================================================================
+Common git commands
+
+To Initialize/Add/Commit to a local git repo inside of a directory:
+		1.	CD into the directory 
+		2.	Run dir (windows) or ls (mac) to see what is in the directory.
+		3.	If correct directory run - git init (initializes a git repo - only needed once)
+		4.	Run git add . (adds all files that have been altered)
+		5.	Run git commit -m “insert a message about changes here”
+
+To Add/Commit to a remote repository:
+		1.	CD into the directory
+		2.	Create a remote repo on bitbucket / github or other remote repo service.
+		3.	Next run git remote add origin <remote repo url here>
+		4.	If needed run  git add . / git commit -m “Your message”
+		5.	First time pushing to remote run git push -u origin master
+		6.	Each time after initial push 
+			git push origin <branch name here>
+
+To configure git once it is installed:
+		1.	To configure a username and attach it to your git commits
+			git config --global user.name “<insert your username here>”
+
+		2.	To configure a user email and attach it to your git commits
+			git config --global user.email “<insert your email here>”
+
+		To check the status of a git repository:
+		1.	Run git status in the directory
+			lists all new or modified files to be committed 
+
+		To reset all the changes made within a branch:
+		1.	Run git reset --hard in the directory
+			Double check prior to running this command!
+
+=================================================================================================================================
+
+Common git branch commands
+
+		1.	git branch
+			Lists all local branches within the directory
+
+		2.	git checkout <branch-name>
+			Will switch to the specific branch.
+
+		3.	git checkout -b <new-branch-name>
+			Will create and switch to a specific branch
+
+		4.	git branch -d <branch-name>
+			Will delete a specific branch
+
+		5.	git merge <branch-name>
+			Will merge(combine changes) from specified branch into current branch
+	
+=================================================================================================================================
+
+Common git remote commands
+
+		1.	git clone <github, bitbucket or other remote repo name>
+		a.	Will clone into the directory currently in.
+		b.	Add a directory name at the end and it will create and clone the repo into that
+
+		2.	git push origin <branch name here>
+			Uploads all code from the branch to the remote repo.
+
+		3.	git pull
+			Will download the changes on the remote repo into the local repo
+
+
+
+		Local Git Repo
+		 
+
+		Pushing to a Remote Repo
+
+ 
+
